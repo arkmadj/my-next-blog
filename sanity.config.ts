@@ -7,14 +7,12 @@ const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
 
 export default defineConfig({
-	name: "default",
-	title: "nextjs13 sanity blog",
-
+  basePath: "/studio",
+	name: "ZULTAN_Content_Studio",
+	title: "ZULTAN Content Studio",
 	projectId,
 	dataset,
-
 	plugins: [deskTool(), visionTool()],
-
 	schema: {
 		types: schemaTypes,
 	},
