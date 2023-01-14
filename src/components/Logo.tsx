@@ -6,7 +6,7 @@ const Logo = (props: LogoProps) => {
   const {renderDefault, title } = props;
   return (
     <div>
-      <Image src="" alt="" className="roounded-full" />
+      <Image src="" height={50} width={50} alt="zultan logo" className="roounded-full" />
       {renderDefault && <>{renderDefault(props)}</>}
     </div>
   )
