@@ -30,4 +30,10 @@ export const myTheme = buildLegacyTheme({
   "--default-button-warning-color": props["--my-yellow"],
   "--default-button-danger-color": props["--my-red"],
 
+  // State
+  "--state-info-color": props["--zultan-brand"],
+  "--state-success-color": props["--my-green"],
+  "--state-warning-color": props["--my-yellow"],
+  "--state-danger-color": props["--my-red"],
+  
 })
