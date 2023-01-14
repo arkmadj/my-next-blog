@@ -35,5 +35,11 @@ export const myTheme = buildLegacyTheme({
   "--state-success-color": props["--my-green"],
   "--state-warning-color": props["--my-yellow"],
   "--state-danger-color": props["--my-red"],
+
+  // Navbar
+  "--main-navigation-color": props["--my-black"],
+  "--main-navigation-color--inverted": props["--my-white"],
+
+  "--focus-color": props["--zultan-brand"],
   
 })
