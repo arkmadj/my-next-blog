@@ -11,12 +11,19 @@ const Header = () => {
 						height={50}
 						width={50}
 						src="https://resources.premierleague.com/premierleague/badges/50/t3.png"
-            alt="logo"
+						alt="logo"
 					/>
 				</Link>
-        <h1>Zultan</h1>
+				<h1>Zultan</h1>
 			</div>
-			<div></div>
+			<div>
+				<Link
+					href="/"
+					className="px-5 py-3 text-sm md:text-base bg-gray-900 text-[#772CE8] flex items-center rounded-full text-center"
+				>
+					Sign up to the zultan
+				</Link>
+			</div>
 		</header>
 	);
 };
