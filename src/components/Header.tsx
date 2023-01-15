@@ -1,8 +1,11 @@
-import React from 'react'
+
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header className="flex items-center justify-between px-10 py-5 space-x-2 font-bold">
+      <div></div>
+      <div></div>
+    </header>
   )
 }
 
