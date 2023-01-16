@@ -2,6 +2,7 @@ import React from 'react'
 import { previewData } from 'next/headers'
 import { groq } from 'next-sanity'
 import { client } from 'lib/sanity.client'
+import PreviewSuspense from "@/components/PreviewSuspense"
 
 const query = groq`
   *[_type=='post']{
