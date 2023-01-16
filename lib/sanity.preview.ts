@@ -12,3 +12,9 @@ if(!projectId || dataset){
     `Missing projectId or dataset. Check your sanity.json or .env`
   )
 }
+
+export const usePreview = definePreview({
+  projectId,
+  dataset,
+  onPublicAccessOnly
+})
