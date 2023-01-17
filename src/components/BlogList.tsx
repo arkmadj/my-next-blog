@@ -1,5 +1,7 @@
+import { Post } from "typings"
+
 type Props  = {
-  posts: Post[];
+  posts: Post[]
 }
 
 const BlogList = ({posts}: Props) => {
