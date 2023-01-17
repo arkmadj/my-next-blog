@@ -1,8 +1,14 @@
-"use client"
+"use client";
 
-import { UsePreview } from "next-sanity/preview"
-import BlogList from "./BlogList"
+import { usePreview } from "lib/sanity.preview";
+import BlogList from "./BlogList";
 
-type props = {
-  query: string;
+type Props = {
+	query: string;
+};
+
+export default function PreviewBlogList({ query }: Props) {
+	const posts = usePreview(null, query);
+	console.log("LOADING posts...", posts);
+	return <BlogList posts={posts} />;
 }
