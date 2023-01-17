@@ -1,4 +1,4 @@
-import { AuthStoreOptions } from "sanity";
+import { AuthStoreOptions, Slug } from "sanity";
 
 type Base = {
 	_createdAt: string;
@@ -16,4 +16,11 @@ interface Post extends Base{
   slug: Slug;
   title: string;
   description: string;
+}
+
+interface Author extends base {
+  bio: Block[];
+  image: Image;
+  name: string;
+  slug: Slug;
 }
