@@ -59,3 +59,13 @@ interface Category extends Base {
 	description: string;
 	title: string;
 }
+
+interface MainImage {
+  _type: "image";
+  assest: Reference;
+}
+
+interface Title {
+  _type: "string";
+  current: string;
+}
