@@ -1,4 +1,8 @@
 "use client"
 
 import { UsePreview } from "next-sanity/preview"
-import Blog
+import BlogList from "./BlogList"
+
+type props = {
+  query: string;
+}
