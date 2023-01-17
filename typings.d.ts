@@ -1,3 +1,5 @@
+import { AuthStoreOptions } from "sanity";
+
 type Base = {
 	_createdAt: string;
 	_id: string;
@@ -5,3 +7,13 @@ type Base = {
 	_type: string;
 	_updatedAt: string;
 };
+
+interface Post extends Base{
+  author: AuthStoreOptions;
+  body: Block[];
+  categories: Category[];
+  mainImage: Image;
+  slug: Slug;
+  title: string;
+  description: string;
+}
