@@ -25,7 +25,7 @@ async function HomePage() {
 					</div>
 				}
 			>
-			<PreviewBlogList/>
+			<PreviewBlogList query={posts}/>
 			</PreviewSuspense>
 		);
 	}
