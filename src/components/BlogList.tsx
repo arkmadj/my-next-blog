@@ -5,8 +5,11 @@ type Props = {
 };
 
 const BlogList = ({ posts }: Props) => {
-	console.log(posts.length);
-	return <div>BlogList</div>;
+	return (
+    <div>
+      <hr className="border-[#772CE8] mb-10" />
+    </div>
+  );
 };
 
 export default BlogList;
