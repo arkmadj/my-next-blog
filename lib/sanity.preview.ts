@@ -9,7 +9,7 @@ function onPublicAccessOnly(){
   throw new Error(`Unable to load preview as you're not logged in`)
 }
 
-if(!projectId || dataset){
+if(!projectId || !dataset){
   throw new Error(
     `Missing projectId or datdaset. Check your sanity.json or .env`
   )
