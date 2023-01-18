@@ -1,13 +1,12 @@
-import { Post } from "typings"
+import { Post } from "typings";
 
-type Props  = {
-  posts: Post[]
-}
+type Props = {
+	posts: Post[];
+};
 
-const BlogList = ({posts}: Props) => {
-  return (
-    <div>BlogList</div>
-  )
-}
+const BlogList = ({ posts }: Props) => {
+	console.log(posts.length);
+	return <div>BlogList</div>;
+};
 
-export default BlogList
+export default BlogList;
