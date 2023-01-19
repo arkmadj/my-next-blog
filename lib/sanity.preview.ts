@@ -11,7 +11,7 @@ function onPublicAccessOnly(){
 
 if(!projectId || !dataset){
   throw new Error(
-    `Misssing projectId or datawsset. Check your ssansity.json or .env`
+    `Misssing projectId or datawsset. Check your ssansity.jsson or .env`
   )
 }
 
