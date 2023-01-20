@@ -1,6 +1,7 @@
 import Image from "next/image";
 import urlFor from "lib/urlFor";
 import { Post } from "typings";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
 type Props = {
 	posts: Post[];
@@ -45,6 +46,10 @@ const BlogList = ({ posts }: Props) => {
               <p className="text-lg font-bold underline">{post.title}</p>
               <p className="text-gray-500 line-clamp-2">{post.description}</p>
             </div>
+            <p className="flex items-center mt-5 font-bold group-hover:underline">
+              Read Post
+              <ArrowRightIcon className="w-4 h-4 ml-2"/>
+            </p>
 					</div>
 				))}
 			</div>
