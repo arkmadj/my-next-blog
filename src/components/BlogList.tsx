@@ -11,7 +11,7 @@ const BlogList = ({ posts }: Props) => {
 			<hr className="border-[#772CE8] mb-10" />
 			<div>
 				{posts.map((post) => (
-					<div key={post_id}>
+					<div key={post._id}>
 						<div>
 							<Image
 								className="object-cover object-left lg:object-center"
