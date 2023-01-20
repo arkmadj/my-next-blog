@@ -11,7 +11,7 @@ const BlogList = ({ posts }: Props) => {
 			<hr className="border-[#772CE8] mb-10" />
 			<div>
 				{posts.map((post) => (
-					<div key={post._id} className="flex flex-col cursor-pointer group:">
+					<div key={post._id} className="flex flex-col cursor-pointer group">
 						<div className="relative w-full transition-transform duration-200 ease-out h-80 drop-shadow-xl group-hover:scale-105">
 							<Image
 								className="object-cover object-left lg:object-center"
@@ -19,11 +19,18 @@ const BlogList = ({ posts }: Props) => {
 								alt={post.author.name}
 								fill
 							/>
-              <div>
-                <div>
-                  <p className="font-bold">{post.title}</p>
-                </div>
-              </div>
+							<div className="absolute bottom-0 flex justify-between w-full p-5 text-white bg-black rounded bg-opacity-20 backdrop-blur-lg drop-shadow-lg">
+								<div>
+									<p className="font-bold">{post.title}</p>
+									<p>
+										{new Date(post._createdAt).toLocaleDateString("en-US", {
+											day: "numeric",
+											month: "long",
+											year: "numeric",
+										})}
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				))}
