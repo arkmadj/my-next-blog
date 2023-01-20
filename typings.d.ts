@@ -9,7 +9,7 @@ type Base = {
 };
 
 interface Post extends Base {
-	author: AuthStoreOptions;
+	author: Author;
 	body: Block[];
 	categories: Category[];
 	mainImage: Image;
