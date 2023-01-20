@@ -1,5 +1,5 @@
-import { Post } from "typings";
 import Image from "next/image";
+import urlFor from "lib/urlFor";
 
 type Props = {
 	posts: Post[];
