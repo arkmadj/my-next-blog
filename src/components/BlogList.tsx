@@ -43,7 +43,7 @@ const BlogList = ({ posts }: Props) => {
 
             <div className="flex-1 mt-5">
               <p className="text-lg font-bold underline">{post.title}</p>
-              <p className="text-gray-500">{post.description}</p>
+              <p className="text-gray-500 line-clamp-2">{post.description}</p>
             </div>
 					</div>
 				))}
