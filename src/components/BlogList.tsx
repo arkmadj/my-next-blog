@@ -1,4 +1,5 @@
 import { Post } from "typings";
+import Image from "next/image";
 
 type Props = {
 	posts: Post[];
@@ -8,6 +9,15 @@ const BlogList = ({ posts }: Props) => {
 	return (
     <div>
       <hr className="border-[#772CE8] mb-10" />
+      <div>
+        {posts.map(post => (
+          <div>
+            <div>
+              <Image/>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
