@@ -18,7 +18,7 @@ interface Post extends Base {
 	description: string;
 }
 
-interface Author extends base {
+interface Author extends Base {
 	bio: Block[];
 	image: Image;
 	name: string;
