@@ -13,7 +13,7 @@ const BlogList = ({ posts }: Props) => {
         {posts.map(post => (
           <div key={post_id}>
             <div>
-              <Image/>
+              <Image className="object-cover object-left lg:object-center"/>
             </div>
           </div>
         ))}
