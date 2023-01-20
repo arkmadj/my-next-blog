@@ -1,5 +1,6 @@
 import Image from "next/image";
 import urlFor from "lib/urlFor";
+import { Post } from "typings";
 
 type Props = {
 	posts: Post[];
@@ -30,6 +31,13 @@ const BlogList = ({ posts }: Props) => {
 										})}
 									</p>
 								</div>
+                <div>
+                  {post.categories.map((category) => (
+                    <div key={category._id} className="bg-[#772CE8] text-center text-black px-3 py-1 rounded-full text-sm font-semibold">
+                      <p>{category.title}</p>
+                    </div>
+                  ))}
+                </div>
 							</div>
 						</div>
 					</div>
