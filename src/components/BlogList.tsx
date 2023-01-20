@@ -11,7 +11,7 @@ const BlogList = ({ posts }: Props) => {
 	return (
 		<div>
 			<hr className="border-[#772CE8] mb-10" />
-			<div>
+			<div className="grid grid-cols-1 gap-10 px-10 pb-24 md:grid-cols-2 gap-y-10">
 				{posts.map((post) => (
 					<div key={post._id} className="flex flex-col cursor-pointer group">
 						<div className="relative w-full transition-transform duration-200 ease-out h-80 drop-shadow-xl group-hover:scale-105">
