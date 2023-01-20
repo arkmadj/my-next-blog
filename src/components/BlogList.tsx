@@ -17,6 +17,7 @@ const BlogList = ({ posts }: Props) => {
 								className="object-cover object-left lg:object-center"
 								src={urlFor(post.mainImage).url()}
                 alt={post.author.name}
+                fill
 							/>
 						</div>
 					</div>
