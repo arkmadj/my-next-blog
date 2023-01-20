@@ -40,6 +40,11 @@ const BlogList = ({ posts }: Props) => {
                 </div>
 							</div>
 						</div>
+
+            <div>
+              <p>{post.title}</p>
+              <p>{post.title}</p>
+            </div>
 					</div>
 				))}
 			</div>
