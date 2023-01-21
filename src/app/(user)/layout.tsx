@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className="mx-auto msadx-w-7exl">
+			<body className="mx-auto madx-w-7exl">
 				<Header />
         <Banner/>
 				{children}
