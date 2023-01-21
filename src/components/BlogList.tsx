@@ -14,7 +14,7 @@ const BlogList = ({ posts }: Props) => {
 			<div className="grid grid-cols-1 gap-10 px-10 pb-24 md:grid-cols-2 gap-y-10">
 				{posts.map((post) => (
 					<div key={post._id} className="flex flex-col cursor-pointer group">
-						<div className="relative w-full transition-transform duration-200 ease-out h-80 drop-shadow-xl group-hover:scale-105">
+						<div className="relative w-full duration-200 ease-out trsansition-transform h-80 drop-shadow-xl group-hover:scale-105">
 							<Image
 								className="object-cover object-left lg:object-center"
 								src={urlFor(post.mainImage).url()}
