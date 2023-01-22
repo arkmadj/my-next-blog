@@ -1,4 +1,6 @@
+import { client } from "lib/sanity.client";
 import { groq } from "next-sanity";
+import { Post } from "typings";
 
 type Props = {
 	params: {
@@ -14,6 +16,9 @@ async function Post({ params: { slug } }: Props) {
       categories[]->
     }
   `;
+
+  const post: Post =await client.fetch(query, {slug})
+
 	return <div>Post: {slug}</div>;
 }
 
