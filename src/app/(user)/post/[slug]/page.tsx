@@ -1,9 +1,13 @@
-import React from 'react'
+type Props = {
+  params: {
+    slug: string;
+  }
+}
 
-function page() {
+function Post() {
   return (
-    <div>page</div>
+    <div>Post</div>
   )
 }
 
-export default page
+export default Post
