@@ -5,6 +5,7 @@ import { schemaTypes } from "./schemas";
 import { myTheme } from "./theme";
 import StudioNavbar from "./src/components/StudioNavbar";
 import Logo from "@/components/Logo";
+import { getDefaultDocumentNode } from "structure";
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!;
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET!;
@@ -16,7 +17,7 @@ export default defineConfig<WorkspaceOptions>({
 	projectId,
 	dataset,
 	plugins: [deskTool({
-		defaultDocumentNode:
+		defaultDocumentNode: getDefaultDocumentNode,
 	}), visionTool()],
 	schema: {
 		types: schemaTypes,
