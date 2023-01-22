@@ -1,6 +1,10 @@
 import React from 'react'
 
-function ClientSideRoute() {
+function ClientSideRoute({
+	children,
+}: {
+	children: React.ReactNode;
+}) {
   return (
     <div>ClientSideRoute</div>
   )
