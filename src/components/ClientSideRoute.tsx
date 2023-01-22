@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import Link from "next/link";
 
@@ -8,7 +10,7 @@ function ClientSideRoute({
 	children: React.ReactNode;
 	route: string;
 }) {
-	return <Link>{children}</Link>;
+	return <Link href={route}>{children}</Link>;
 }
 
 export default ClientSideRoute;
