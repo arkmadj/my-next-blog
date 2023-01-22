@@ -6,7 +6,7 @@ function ClientSideRoute({
 	children: React.ReactNode;
 }) {
   return (
-    <div>ClientSideRoute</div>
+    <div>{children}</div>
   )
 }
 
