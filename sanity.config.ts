@@ -15,7 +15,9 @@ export default defineConfig<WorkspaceOptions>({
 	title: "ZULTAN Content Studio",
 	projectId,
 	dataset,
-	plugins: [deskTool(), visionTool()],
+	plugins: [deskTool({
+		defaultDocumentNode:
+	}), visionTool()],
 	schema: {
 		types: schemaTypes,
 	},
