@@ -4,9 +4,9 @@ type Props = {
   }
 }
 
-function Post() {
+function Post({params: {slug}}: Props) {
   return (
-    <div>Post</div>
+    <div>Post: {slug}</div>
   )
 }
 
