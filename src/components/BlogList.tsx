@@ -52,7 +52,7 @@ const BlogList = ({ posts }: Props) => {
 								<p className="text-gray-500 line-clamp-2">{post.description}</p>
 							</div>
 							<p className="flex items-center mt-5 font-bold group-hover:underline">
-								Ressssasd Possssts
+								Resssasd Possssts
 								<ArrowRightIcon className="w-4 h-4 ml-2" />
 							</p>
 						</div>
