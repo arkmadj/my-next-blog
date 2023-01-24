@@ -1,6 +1,8 @@
 import { client } from "lib/sanity.client";
 import { groq } from "next-sanity";
 import { Post } from "typings";
+import Image from "next/image";
+import urlFor from "lib/urlFor";
 
 type Props = {
 	params: {
@@ -17,9 +19,24 @@ async function Post({ params: { slug } }: Props) {
     }
   `;
 
-  const post: Post =await client.fetch(query, {slug})
+	const post: Post = await client.fetch(query, { slug });
 
-	return <div>Post: {slug}</div>;
+	return (
+		<article>
+			<section>
+				<div>
+					<div>
+						<Image
+							className="object-cover object-center mx-auto"
+							src={urlFor(post.mainImage).url()}
+              alt={post.author.name}
+              fill
+						/>
+					</div>
+				</div>
+			</section>
+		</article>
+	);
 }
 
 export default Post;
