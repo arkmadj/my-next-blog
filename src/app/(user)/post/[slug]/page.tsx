@@ -3,7 +3,6 @@ import { groq } from "next-sanity";
 import { Post } from "typings";
 import Image from "next/image";
 import urlFor from "lib/urlFor";
-import category from "schemas/category";
 
 type Props = {
 	params: {
