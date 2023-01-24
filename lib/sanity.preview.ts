@@ -3,8 +3,6 @@
 import {definePreview} from "next-sanity/preview"
 import { projectId, dataset } from "./sanity.client" 
 
-console.log("Nigger: ",  {projectId, dataset})
-
 function onPublicAccessOnly(){
   throw new Error(`Unable to load preview as you're not logged in`)
 }
