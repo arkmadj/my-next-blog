@@ -3,6 +3,7 @@ import { groq } from "next-sanity";
 import { Post } from "typings";
 import Image from "next/image";
 import urlFor from "lib/urlFor";
+import PortableText from "@portabletext/react";
 
 type Props = {
 	params: {
@@ -77,6 +78,8 @@ async function Post({ params: { slug } }: Props) {
 					</section>
 				</div>
 			</section>
+
+			<PortableText value={post.body} />
 		</article>
 	);
 }
