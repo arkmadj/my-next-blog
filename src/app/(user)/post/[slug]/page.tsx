@@ -54,7 +54,10 @@ async function Post({ params: { slug } }: Props) {
                   height={40}
                   width={40}
 								/>
-                <p>{post.author.name}</p>
+                <div className="w-64">
+                  <h3>{post.author.name}</h3>
+                  <div>{/* TODO: Author BIO */}</div>
+                </div>
 							</div>
 						</div>
 					</section>
