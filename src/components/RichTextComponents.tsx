@@ -16,5 +16,11 @@ export const RichTextComponents = {
 				</div>
 			);
 		},
+    list: {
+      bullet: ({children}: any)=> (
+        <ul className="py-5 ml-10 space-y-5 list-disc">{children}</ul>
+      ),
+      
+    }
 	},
 };
