@@ -23,6 +23,11 @@ export const RichTextComponents = {
       number: ({children}: any) => {
         <ol className="list-decimal mt-lg">{children}</ol>
       }
+    },
+    block: {
+      h1: ({children}: any) => (
+        <h1 className="py-10 text-5xl font-bold">{children}</h1>
+      )
     }
 	},
 };
