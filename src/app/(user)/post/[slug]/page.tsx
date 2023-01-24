@@ -4,6 +4,7 @@ import { Post } from "typings";
 import Image from "next/image";
 import urlFor from "lib/urlFor";
 import { PortableText } from "@portabletext/react";
+import { RichTextComponents } from "@/components/RichTextComponents";
 
 type Props = {
 	params: {
@@ -79,7 +80,7 @@ async function Post({ params: { slug } }: Props) {
 				</div>
 			</section>
 
-			<PortableText value={post.body} components={}/>
+			<PortableText value={post.body} components={RichTextComponents}/>
 		</article>
 	);
 }
