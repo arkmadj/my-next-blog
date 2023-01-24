@@ -46,6 +46,9 @@ async function Post({ params: { slug } }: Props) {
 									})}
 								</p>
 							</div>
+              <div>
+                
+              </div>
 						</div>
 					</section>
 				</div>
