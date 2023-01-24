@@ -24,8 +24,8 @@ async function Post({ params: { slug } }: Props) {
 	return (
 		<article>
 			<section>
-				<div>
-					<div>
+				<div className="relative flex flex-col justify-between min-h-56 md:flex-row">
+					<div className="absolute top-0 w-full h-full p-10 opacity-10 blur-sm">
 						<Image
 							className="object-cover object-center mx-auto"
 							src={urlFor(post.mainImage).url()}
