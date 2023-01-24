@@ -29,10 +29,25 @@ async function Post({ params: { slug } }: Props) {
 						<Image
 							className="object-cover object-center mx-auto"
 							src={urlFor(post.mainImage).url()}
-              alt={post.author.name}
-              fill
+							alt={post.author.name}
+							fill
 						/>
 					</div>
+
+					<section>
+						<div>
+							<div>
+								<h1 className="text-4xl font-extrabold">{post.title}</h1>
+								<p>
+									{new Date(post._createdAt).toLocaleDateString("en-US", {
+										day: "numeric",
+										month: "long",
+										year: "numeric",
+									})}
+								</p>
+							</div>
+						</div>
+					</section>
 				</div>
 			</section>
 		</article>
