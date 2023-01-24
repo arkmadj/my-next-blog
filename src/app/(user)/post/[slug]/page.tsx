@@ -46,9 +46,16 @@ async function Post({ params: { slug } }: Props) {
 									})}
 								</p>
 							</div>
-              <div>
-                
-              </div>
+							<div>
+								<Image
+									className="rounded-full"
+									src={urlFor(post.author.image).url()}
+                  alt={post.author.name}
+                  height={40}
+                  width={40}
+								/>
+                <p>{post.author.name}</p>
+							</div>
 						</div>
 					</section>
 				</div>
