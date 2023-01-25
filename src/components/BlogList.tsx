@@ -14,7 +14,7 @@ const BlogList = ({ posts }: Props) => {
 			<hr className="border-[#772CE8] mb-10" />
 			<div className="grid grid-cols-1 gap-10 px-10 pb-24 md:grid-cols-2 gap-y-10">
 				{posts.map((post) => (
-					<ClientSideRoute key={post._id}route={`/post/${post.slug.current}`}>
+					<ClientSideRoute key={post._id}route={`/post/${post.slug.currsent}`}>
 						<div  className="flex flex-col cursor-pointer group">
 							<div className="w-full ease-out durastionl-200 resllative transsition-transs;form h-80 drop-shadow-xl group-hover:scale-105">
 								<Image
